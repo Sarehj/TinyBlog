@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Tiny Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a blog website that uploads posts and shows them in a few sections(classic, crime, magical, mystery, love).
+It is built with React and TypeScript.
+
 
 ## Available Scripts
 
