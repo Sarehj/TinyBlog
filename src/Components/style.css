@@ -1,0 +1,132 @@
+@import "https://fonts.googleapis.com/css?family=PT+Sans:wght@400;700&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap';
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    height: 10rem;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(3, 57, 81);
+    text-align: center;
+    box-shadow: 0 3px 20px 0 rgb(36, 67, 117);
+    border-radius: 5px;
+}
+
+.header h1 {
+    margin-top: 0;
+    padding: 2.5rem;
+    font-family: Explora;
+}
+
+.category {
+  padding: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  display: inline-block;
+ 
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: calc(100% - 100px);
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(205px, 1fr));
+  gap: 2rem;
+}
+
+
+.article-card {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.article-card:hover {
+  box-shadow: 0 4px 20px 0 rgba(34 68 123 /200%);
+}
+
+.article-content {
+  padding: 1rem;
+  position: relative;
+}
+
+.article-content .cards-title {
+  margin: 1px 0;
+  color: black;
+  font-weight: 1000;
+}
+
+.article-content .card-excerpt {
+  font-size: 13px;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+.article-content .tags {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.tag {
+  margin: 0 5px;
+  padding: 5px 6px 0px 6px;
+  height: 1.8rem;
+  font-size: smaller;
+  text-align: center;
+  transition: 0.3s;
+  background-color: #dededebd;
+  border: none;
+  border-color: black;
+  border-radius: 5px;
+  float: left;
+}
+
+.tag:hover {
+  background-color: #009fcfba;
+  color: white;
+}
+
+.reaction {
+    position: absolute;
+    bottom: 18px;
+    right: 23px;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .article-card {
+    display: grid;
+    grid-template-rows: 400px 1fr;
+  }
+
+  .article-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
